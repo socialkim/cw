@@ -127,6 +127,15 @@ details.more[open] summary::after{content:" ▴"}
 .adbar div{max-width:720px; margin:0 auto; padding:8px 16px; display:flex; gap:8px; justify-content:flex-end; flex-wrap:wrap}
 .adbar a{font-size:.8125rem; font-weight:700; text-decoration:none; border-radius:999px; padding:7px 14px; white-space:nowrap; color:var(--surface); box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
 .adbar a.bk{background:var(--surface); color:var(--accent); box-shadow:none}
+.follow{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.follow .fc{background:var(--surface); border-radius:var(--r); padding:18px; box-shadow:0 1px 2px rgba(0,0,0,.04); display:flex; flex-direction:column}
+.follow .k{font-size:.8125rem; font-weight:700; color:var(--accent)}
+.follow h3{font-size:1.125rem; line-height:1.35; color:var(--ink-1); font-weight:800; margin:4px 0 6px}
+.follow p{margin:0 0 14px; flex:1}
+.follow a.go{display:flex; align-items:center; justify-content:center; font-weight:700; text-decoration:none; border-radius:10px; padding:11px 16px; min-height:44px; color:#fff}
+.follow a.yt{background:#E02F2F}
+.follow a.ka{background:#FEE500; color:#191919}
+@media (max-width:560px){.follow{grid-template-columns:1fr}}
 .bookad{display:flex; gap:20px; align-items:center; background:var(--surface); border-radius:var(--r); padding:20px; margin-top:40px; box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .bookad img{width:128px; flex:0 0 128px}
 .bookad .k{font-size:.8125rem; font-weight:700; color:var(--accent)}
@@ -160,6 +169,8 @@ footer p{margin:4px 0}
 <body>
 <div class="adbar"><div>
   <a class="bk" href="https://product.kyobobook.co.kr/detail/S000221773230" target="_blank" rel="noopener">『AI 2027』 책 보기 ↗</a>
+  <a href="https://www.youtube.com/@newsduk?sub_confirmation=1" target="_blank" rel="noopener">뉴스덕 구독 ↗</a>
+  <a href="https://open.kakao.com/o/gQiVg8Bh" target="_blank" rel="noopener">오픈채팅방 ↗</a>
   <a href="https://www.itcl.kr" target="_blank" rel="noopener">ITCL 홈페이지 ↗</a>
 </div></div>
 <div class="wrap">
@@ -559,6 +570,25 @@ footer p{margin:4px 0}
     </div>
   </details>
 
+</section>
+
+<section class="sec" aria-labelledby="t-follow">
+  <h2 id="t-follow">강의가 끝나도 이어집니다</h2>
+  <p class="sub">매주 새 AI 소식을 받아 보는 두 가지 방법 · 둘 다 무료입니다</p>
+  <div class="follow">
+    <div class="fc">
+      <div class="k">유튜브</div>
+      <h3>김덕진의 뉴스덕</h3>
+      <p>한 주의 AI · IT 뉴스를 쉽게 풀어 드립니다. 매주 월요일 밤 8시 라이브. 구독해 두면 알림이 옵니다.</p>
+      <a class="go yt" href="https://www.youtube.com/@newsduk?sub_confirmation=1" target="_blank" rel="noopener">뉴스덕 구독하기 ↗</a>
+    </div>
+    <div class="fc">
+      <div class="k">카카오톡 오픈채팅</div>
+      <h3>김덕진의 AI 큐레이션</h3>
+      <p>챙겨 볼 만한 AI 소식을 골라 올려 드리는 방입니다. 오늘 발표자료 요약본도 이 방에 올립니다.</p>
+      <a class="go ka" href="https://open.kakao.com/o/gQiVg8Bh" target="_blank" rel="noopener">오픈채팅방 들어가기 ↗</a>
+    </div>
+  </div>
 </section>
 
 <section class="bookad" aria-label="책 안내">
